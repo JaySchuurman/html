@@ -36,53 +36,16 @@ include "conn.php"
             <div class="food">
                 FOOD    
             </div>
+            <div class="and">
+                AND
+            </div>
             <div class="drinks">
                 DRINKS
             </div>
         </div>
     </div>
 
-    <div class="products-container">
-        <div class="row3">
-            <div class="food-products">
-                <div class="food-products-text">
-                    <p>Chocolate Cake* €5,00</p>
-                    <p>Red Velvet Cake* €7,50</p>
-                    <p>Carrot Cake €5,00</p>
-                        <div class="whipped-cream-text1">
-                            <p>*Whipped Cream €0,50</p>
-                        </div>
-                </div>
-            </div> 
-        </div>
-            
-        <div class="row4"> 
-            <div class="drink-products">
-                <div class="drink-products-text">
-                    <p>Black Coffee €2,50</p>
-                    <p>Hot Chocolate €7,50</p>
-                    <p>Espresso €5,00</p>
-                    <p>Americano €5,00</p>
-                        <div class="whipped-cream-text2">
-                            <p>*Whipped Cream €0,50</p>
-                        </div>
-                </div>
-            </div>
-        </div>        
-    </div>
-
 <div class="div">
-<?php
-    $stmt = $connection->prepare("SELECT * FROM producten");
-    $stmt->execute();
-    $data = $stmt->fetchAll();
-
-    foreach ($data as $row) {
-        echo $row['name'];
-        echo "<a href='product_update.php?id=".$row['id']."'>Update</a>";
-        // echo "<a href='product_delete.php?id=".$row['id']."'>Delete</a>";
-    }
-?>
 </div>
     <div class="eten-en-drinken">
     <?php
@@ -110,6 +73,20 @@ include "conn.php"
         <p>LET US KNOW WHILE MAKING A RESERVATION.</p>
         <p>OR INFORM ONE OF OUR BARISTA'S WHILE ORDERING!</p>
     </div>
+
+<div class="update-delete-products">
+    <?php
+    $stmt = $connection->prepare("SELECT * FROM producten");
+    $stmt->execute();
+    $data = $stmt->fetchAll();
+
+    foreach ($data as $row) {
+        echo $row['name'];
+        echo "<a href='product_update.php?id=".$row['id']."'>Update</a>";
+        // echo "<a href='product_delete.php?id=".$row['id']."'>Delete</a>";
+    }
+?>
+</div>
 
 <div class="footer2" style="background-image: url(img/coffeebeans.png)"></div>
 </div>

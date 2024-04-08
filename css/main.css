@@ -21,7 +21,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-left:440px;
+    margin-left:550px;
     -webkit-text-stroke: black 10px solid;
     text-shadow: #000000;
 }
@@ -262,7 +262,7 @@ margin-right: 100px;}
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 750px;
+    gap: 300px;
 }
 
 .food{
@@ -272,6 +272,12 @@ margin-right: 100px;}
     stroke: #FFB800;
 }
 
+.and{
+    font-family: Oswald;
+    font-size: 100px;
+    color:#662500;
+    stroke: #FFB800;
+}
 .drinks{
     font-family: Oswald;
     font-size: 100px;
@@ -363,8 +369,8 @@ margin-right: 100px;}
 }
 
 .items-container{
-    height: 200px;
-    width: 400px;
+    height: auto;
+    width: auto;
     border: solid 5px #000000;
     background-color: #662500;    
 }
@@ -375,6 +381,12 @@ margin-right: 100px;}
     color:#000000;
     text-align: center;
     margin-top:80px;
+}
+
+.update-delete-products{
+    font-size: 40px;
+    font-family: Oswald;
+    text-align: center;
 }
 /*end of fooddrinks.php*/
 /*start of reservations.php*/
@@ -473,7 +485,7 @@ input{
     color: #FFB800;
     display: flex;
     justify-content: center;
-    margin-left: 500px;
+    margin-left: 700px;
    -webkit-text-stroke: black 10px solid;
     text-shadow: #000000;   
 }

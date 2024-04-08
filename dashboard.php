@@ -24,8 +24,6 @@ if (!isset($_SESSION["user"])) {
 <a class="dashboard" href="index.php">
     <h>YOU HAVE SUCCESFULLY LOGGED IN</h>
     <p1>PRESS ANYWHERE TO GO BACK TO THE HOMESCREEN</p1>
-    
-
 </a>
 </body>
 </html>
