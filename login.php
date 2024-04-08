@@ -16,38 +16,28 @@
 <body>
 <div class="header">
     <div class="container2">
+
         <div class="login-header-text">
             <p>LOGIN</p>
         </div>
+        <a class="home-button1" href= index.php>
+            HOME
+        </a>
     </div>
 </div>
-
-<div class="input-container1">
-<form class='register_form' name='register' method="POST" action='pages/leeftijdchecken'>
-<h> Name: </h>
-<input type="text" name='naam'/>
+<div class="input-container1" style="background-image: url(img/Steaming-.png)">
+    <div class="login-input-box">
+<form class="form" action="login_logic.php" name='login_logic' method="POST">
+    <label>Email:</label>
+        <input type="text" name='email' placeholder="Email" required>
+    <label>Username:</label>
+        <input type="text" name='username' placeholder="Username" required>
+    <label>Password:</label>
+        <input type="password" name='password' placeholder="Password" required>
+    <input type="submit" value="Login">
+        </form>
+        </div>
 </div>
-
-<div class="row">
-<p> E-mail: </p>
-<input type="text" name='e-mail'/>
-</div>
-
-<div class="row">
-<p> Algemene voorwaarden: </p>
-<input type="checkbox" name='av'/>
-</div>
-
-<div class="row">
-<p> Password: </p>
-<input type="text" name='password'/>
-</div>
-
-<div class="row">
-<input type="submit" name="submit" value= 'send'>
-</form>
-</div>
-
 <div class="footer2" style="background-image: url(img/coffeebeans.png)">
     </body>
 </html>

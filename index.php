@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="img">
     <link rel="stylesheet" href="login.php">
     <link rel="stylesheet" href="fooddrinks.php">
-    <link rel="stylesheet" >    
+    <link rel="stylesheet" href="reservations.php">
+    <link rel="stylesheet" href="locations.php">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
@@ -20,7 +21,7 @@
 <div class="header">
     <div class="container1">
         <div class="the-coffee-shop-header-text">
-            <p>The Coffee Shop</p>
+            <p>THE COFFEE SHOP</p>
         </div>
             <div class="login-button">
                 <a class="login-text" href= login.php>
@@ -38,28 +39,26 @@
             </a>
         </div>
             <div class="reservations-button">
-                <div class="reservations-text1">
+                <a class="reservations-text1" href= reservations.php>
                     <h>RESERVATIONS</h>
-                </div>
+</a>
     </div>  
 </div>
 
 <div class="scherm1">
-<div class="lijn">
-    <div class="logo" style="image: url(img/R.png)">
-</div>
+    <div class="lijn"></div>
 </div>
     
 <div class="buttons-3-4-container">
     <div class="locations-button">
-        <div class="locations-text1">
+        <a class="locations-text1" href= locations.php>
             <h>LOCATIONS</h>
-        </div>
+        </a>
     </div>
         <div class="review-button">
-            <div class="review-text1">
+            <a class="review-text1" href= review.php>
                 <h>LEAVE A REVIEW!</h>
-            </div>
+            </a>
         </div>
 </div>
 
