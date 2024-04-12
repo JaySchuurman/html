@@ -83,7 +83,7 @@ include "conn.php"
     foreach ($data as $row) {
         echo $row['name'];
         echo "<a href='product_update.php?id=".$row['id']."'>Update</a>";
-        // echo "<a href='product_delete.php?id=".$row['id']."'>Delete</a>";
+        echo "<a href='product_delete.php?id=".$row['id']."'>Delete</a>";
     }
 ?>
 </div>

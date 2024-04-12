@@ -5,6 +5,7 @@ include 'conn.php';
 $stmt = $connection->prepare("SELECT * FROM producten WHERE id=:id");
 $stmt->execute(['id' => $_GET['id']]);
 $product = $stmt->fetch();
+header ('Location: product_update.php');
 ?>
 
 <!DOCTYPE html>
@@ -23,7 +24,7 @@ $product = $stmt->fetch();
         <input type="text" name="name" value="<?php echo $product['name']; ?>" required>
         <label>Prijs van Product: </label>
         <input type="text" name="price" value="<?php echo $product['price']; ?>" required>
-        <input type="submit" value=" Update Product">
+        <input type="submit" value= "update product">
     </form>
 </body>
 </html>

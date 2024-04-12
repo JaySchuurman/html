@@ -20,6 +20,11 @@
 <body>
 <div class="header">
     <div class="container1">
+        <div class="log-out-button">
+            <a class="log-out-text" href= logout.php>
+                TO LOG OUT
+            </a>
+        </div>
         <div class="the-coffee-shop-header-text">
             <p>THE COFFEE SHOP</p>
         </div>
